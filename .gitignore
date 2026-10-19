@@ -1,0 +1,22 @@
+# Local properties (contains SDK path, never commit)
+local.properties
+
+# Gradle build outputs and caches
+build/
+.gradle/
+app/build/
+
+# Keystores and signing secrets
+*.jks
+*.keystore
+keystore.properties
+
+# IDE
+.idea/
+*.iml
+
+# Android Studio navigation files
+.navigation/
+
+# OS
+.DS_Store

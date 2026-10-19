@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="radio_disabled">Disabled</string>
+    <string name="radio_external">External storage</string>
+    <string name="radio_removable">Removable card</string>
+    <string name="radio_custom">Custom directory path</string>
+    <string name="custom_path_hint">Enter absolute path</string>
+    <string name="app_name" translatable="false">Papyrus by Bob</string>
+    <string name="app_description">Simple notepad for short notes</string>
+    <string name="activity_preferences">Papyrus by Bob - Preferences</string>
+    <string name="activity_editor">Papyrus by Bob</string>
+    <string name="shortcut_newnote">New note</string>
+    <string name="title_requests">Requests</string>
+    <string name="send_chooser">Choose:</string>
+    <string name="dlg_yes">Yes</string>
+    <string name="dlg_no">No</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+    <string name="dlg_create_notes_dir">Notes directory not exists. Do you want to create it?</string>
+    <string name="dlg_note_name">Note name:</string>
+    <string name="dlg_dir_name">Directory name:</string>
+    <string name="dlg_password">Password:</string>
+    <string name="dlg_here">Here</string>
+    <string name="dlg_save_to">Save to…</string>
+    <string name="dlg_delete_confirmation">Are you sure you want to delete this note?</string>
+    <string name="err_no_data">No data</string>
+    <string name="err_reg_expr">Regular expression has an error</string>
+    <string name="toast_note_saved">Note saved</string>
+    <string name="toast_password_match">Password match</string>
+    <string name="toast_search_saved">Search saved</string>
+    <string name="toast_no_saved_searches">No saved searches</string>
+    <string name="menu_new_note">New note…</string>
+    <string name="menu_new_dir">New directory…</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_preferences">Preferences…</string>
+    <string name="menu_about">About…</string>
+    <string name="menu_encrypt">Encrypt</string>
+    <string name="menu_decrypt">Decrypt</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="menu_rename">Rename</string>
+    <string name="menu_move_to">Move to…</string>
+    <string name="menu_copy_to">Copy to…</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_links_show">Show links</string>
+    <string name="menu_links_hide">Hide links</string>
+    <string name="menu_insert_date">Insert date</string>
+    <string name="search_hint">Search a phrase</string>
+    <string name="note_search_failed">Not found</string>
+    <string name="search_history_title">Search history</string>
+    <string name="search_history_clear">Clear history</string>
+    <string name="search_history_cleared">Search history cleared</string>
+    <string name="storage_access_title">Storage access</string>
+    <string name="storage_access_message">To choose any folder on the device or SD card, please allow access to all files.</string>
+    <string name="storage_access_grant">Allow</string>
+    <string name="storage_roots_title">Storage</string>
+    <string name="picker_phone">Phone</string>
+    <string name="picker_sdcard">SD card</string>
+    <string name="picker_no_sdcard">No SD card found</string>
+    <string name="about_title">About Papyrus by Bob</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_description">A simple notepad for short notes. Notes are stored as plain text files in a folder of your choice.</string>
+    <string name="about_github">GitHub: https://github.com/hjochman/Papyrus-BY-BOB</string>
+    <string name="about_original">Inspired by the app “Papyrus Ex” by Kallisto (version 2.3.3, package com.kallisto.papyrusex). Papyrus by Bob is a new, independent project: the code was written from scratch, and the icon and name are original. It is not affiliated with the original developer.</string>
+    <string name="about_hints_title">Notes</string>
+    <string name="about_hints">• Notes are saved as .txt files. Anyone with access to the folder can read unencrypted notes.\n• Encryption (AES-256-GCM, PBKDF2) only protects the note body. The first line (title) stays readable. A forgotten password cannot be recovered.\n• To use a folder on the phone or SD card, allow access to all files in the system settings.\n• The app is provided as is, without warranty. Please back up important notes regularly.</string>
+    <string name="search_history_empty">No search history</string>
+    <string name="editor_hint">Empty note, type your text</string>
+    <string name="editor_new_note_title">New note</string>
+    <string name="pe_today">Today</string>
+    <string name="pe_yesterday">Yesterday</string>
+    <string name="pe_no_parent_dir">Parent directory not found</string>
+    <string name="pe_no_notes_dir">Notes directory not accessible</string>
+    <string name="pe_failed">Failed</string>
+    <string name="pe_exists">Already exists</string>
+    <string name="pe_no_name_entered">No name entered</string>
+    <string name="pe_empty_body">Empty note body (the header is not to be encrypted)</string>
+    <string name="pe_not_empty">Not empty</string>
+    <string name="pe_failed_load">Failed to load the note</string>
+    <string name="pe_failed_save">Failed to save the note</string>
+    <string name="pe_failed_exists">NOT SAVED! A note with the same name is already exists. Change the first line</string>
+    <string name="pe_failed_encrypt">Failed to encrypt</string>
+    <string name="pe_failed_decrypt">Failed to decrypt (wrong password?)</string>
+    <string name="pe_no_password_entered">No password entered</string>
+    <string name="pe_too_long_header">Note header is too long</string>
+    <string name="pe_copy">copy</string>
+    <string name="cd_context_forward">Context search forward</string>
+    <string name="cd_context_reverse">Context search reverse</string>
+    <string name="cd_item_image">Item image</string>
+    <string name="cd_info_long_press">Info: Long press for menu</string>
+    <string name="hint_long_press_menu">Long press on a note opens the menu (rename, delete, send, move/copy).</string>
+    <string name="cd_new_note">New note</string>
+    <string name="cd_search_option">Search option</string>
+    <string name="cd_search_do">Search</string>
+    <string name="pref_main">Main</string>
+    <string name="pref_dir">Notes path</string>
+    <string name="pref_dir_sum">A directory for the notes</string>
+    <string name="pref_debug_info">Debug info</string>
+    <string name="pref_debug_info_sum_on">Printing debug messages in the system log. Turn this option off to speedup the application</string>
+    <string name="pref_debug_info_sum_off">Issue? Turn on, cause the problem, save the system log into a file and send it to the developer</string>
+    <string name="pref_note_name">Note name</string>
+    <string name="pref_change_name">Change name</string>
+    <string name="pref_change_name_sum_on">Automatically modifying a note name (file name) to reflect the note header (the first non-empty line)</string>
+    <string name="pref_change_name_sum_off">Leaving a note name intact once the note created ((as in the app that inspired this project))</string>
+    <string name="pref_ellipsis">Ellipsis</string>
+    <string name="pref_ellipsis_sum_on">Automatically adding an ellipsis to the end of a multiline note name. Thus, the note can be easily recognized in the list</string>
+    <string name="pref_ellipsis_sum_off">A note name is exactly the first non-empty line of the note. No ellipsis added to the end of the note name</string>
+    <string name="pref_appearance">Appearance</string>
+    <string name="pref_panel">Search bar</string>
+    <string name="pref_panel_sum_on">The search bar is always displayed above the list</string>
+    <string name="pref_panel_sum_off">The search bar is displayed only when you start a search</string>
+    <string name="pref_sort_order">Sort order</string>
+    <string name="pref_sort_order_sum">Notes sort order in the list</string>
+    <string name="pref_dir_order">Directories</string>
+    <string name="pref_dir_order_sum">Directories position in the list</string>
+    <string name="pref_colors">Editor colors</string>
+    <string name="pref_colors_sum">Colors for text and background of the editor</string>
+    <string name="pref_monospace_font">Monospace font</string>
+    <string name="pref_monospace_font_sum_on">Using a monospace font for the note context.</string>
+    <string name="pref_monospace_font_sum_off">Using a default font for the note content.</string>
+    <string name="pref_text_size">Text size</string>
+    <string name="pref_text_size_sum">Editor text size</string>
+    <string name="pref_dir_key" translatable="false">notesDirSelection</string>
+    <string name="pref_dir_name" translatable="false">Notes</string>
+    <string name="pref_dir_custom_key" translatable="false">notesCustomPath</string>
+    <string name="pref_dir_custom_def" translatable="false">/mnt/sdcard/Notes</string>
+    <string name="pref_debug_info_key" translatable="false">debugInfo</string>
+    <string name="pref_change_name_key" translatable="false">changeName</string>
+    <string name="pref_ellipsis_key" translatable="false">ellipsis</string>
+    <string name="pref_panel_key" translatable="false">searchBar</string>
+    <string name="pref_sort_order_key" translatable="false">sort_order</string>
+    <string name="pref_sort_order_def" translatable="false">BY_DATE</string>
+    <string name="pref_dir_order_key" translatable="false">dir_order</string>
+    <string name="pref_dir_order_def" translatable="false">DIR_ON_BOTTOM</string>
+    <string name="pref_colors_key" translatable="false">colors</string>
+    <string name="pref_colors_def" translatable="false">COLORS_DEFAULT</string>
+    <string name="pref_monospace_font_key" translatable="false">monospaceFont</string>
+    <string name="pref_text_size_key" translatable="false">text_size</string>
+    <string name="pref_text_size_def" translatable="false">SIZE_MEDIUM</string>
+</resources>

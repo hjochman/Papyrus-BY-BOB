@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/pref_main">
+        <Preference
+            android:key="notesCustomPath"
+            android:title="@string/pref_dir"
+            android:summary="@string/pref_dir_sum" />
+
+        <SwitchPreferenceCompat
+            android:key="changeName"
+            android:title="@string/pref_change_name"
+            android:summaryOn="@string/pref_change_name_sum_on"
+            android:summaryOff="@string/pref_change_name_sum_off"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="ellipsis"
+            android:title="@string/pref_ellipsis"
+            android:summaryOn="@string/pref_ellipsis_sum_on"
+            android:summaryOff="@string/pref_ellipsis_sum_off"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_appearance">
+        <SwitchPreferenceCompat
+            android:key="searchBar"
+            android:title="@string/pref_panel"
+            android:summaryOn="@string/pref_panel_sum_on"
+            android:summaryOff="@string/pref_panel_sum_off"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="sort_order"
+            android:title="@string/pref_sort_order"
+            android:summary="@string/pref_sort_order_sum"
+            android:entries="@array/pref_sort_order_arr"
+            android:entryValues="@array/pref_sort_order_val_arr"
+            android:defaultValue="BY_DATE" />
+
+        <ListPreference
+            android:key="dir_order"
+            android:title="@string/pref_dir_order"
+            android:summary="@string/pref_dir_order_sum"
+            android:entries="@array/pref_dir_order_arr"
+            android:entryValues="@array/pref_dir_order_val_arr"
+            android:defaultValue="DIR_ON_BOTTOM" />
+
+        <ListPreference
+            android:key="colors"
+            android:title="@string/pref_colors"
+            android:summary="@string/pref_colors_sum"
+            android:entries="@array/pref_colors_arr"
+            android:entryValues="@array/pref_colors_val_arr"
+            android:defaultValue="COLORS_DEFAULT" />
+
+        <SwitchPreferenceCompat
+            android:key="monospaceFont"
+            android:title="@string/pref_monospace_font"
+            android:summaryOn="@string/pref_monospace_font_sum_on"
+            android:summaryOff="@string/pref_monospace_font_sum_off"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="text_size"
+            android:title="@string/pref_text_size"
+            android:summary="@string/pref_text_size_sum"
+            android:entries="@array/pref_text_size_arr"
+            android:entryValues="@array/pref_text_size_val_arr"
+            android:defaultValue="SIZE_MEDIUM" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

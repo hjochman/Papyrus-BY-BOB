@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_papyrus">
+
+    <!-- Search Bar (toggleable or always on based on preference) -->
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/papyrus_header"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@drawable/search_bg"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionSearch" />
+    </LinearLayout>
+
+    <!-- Path / Breadcrumbs header -->
+    <TextView
+        android:id="@+id/textCurrentPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutSearch"
+        android:background="@color/papyrus_header"
+        android:paddingStart="16dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        tools:text="/storage/emulated/0/Notes" />
+
+    <!-- RecyclerView for list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textCurrentPath"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_note" />
+
+    <!-- Info button in lower right corner explaining long-press menu -->
+    <ImageButton
+        android:id="@+id/buttonInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_info_circle"
+        android:contentDescription="@string/cd_info_long_press" />
+
+    <!-- Empty state message -->
+    <TextView
+        android:id="@+id/textEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textCurrentPath"
+        android:gravity="center"
+        android:text="@string/err_no_data"
+        android:textColor="@color/secondary_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

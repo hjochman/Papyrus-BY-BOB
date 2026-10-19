@@ -1,0 +1,76 @@
+plugins {
+    id("com.android.application")
+}
+
+// Signing credentials are never stored in the repo: read them from the git-ignored
+// keystore.properties (project root), Gradle properties (~/.gradle/gradle.properties)
+// or environment variables (PAPYRUS_STORE_PASSWORD, PAPYRUS_KEY_ALIAS, PAPYRUS_KEY_PASSWORD).
+def keystoreProps = new Properties()
+def keystoreFile = rootProject.file("keystore.properties")
+if (keystoreFile.exists()) {
+    keystoreFile.withInputStream { keystoreProps.load(it) }
+}
+def signingValue = { String key ->
+    keystoreProps.getProperty(key) ?: project.findProperty(key) ?: System.getenv(key)
+}
+
+android {
+    namespace = "com.hape.payrus"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.hape.payrus"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            def storePass = signingValue("PAPYRUS_STORE_PASSWORD")
+            if (storePass != null) {
+                storeFile = rootProject.file("patch-key.jks")
+                storePassword = storePass
+                keyAlias = signingValue("PAPYRUS_KEY_ALIAS") ?: "patchkey"
+                keyPassword = signingValue("PAPYRUS_KEY_PASSWORD") ?: storePass
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            if (signingConfigs.release.storeFile != null) {
+                signingConfig = signingConfigs.release
+            }
+            minifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.preference:preference:1.2.1")
+    implementation("androidx.documentfile:documentfile:1.0.1")
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.robolectric:robolectric:4.17")
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_sort_order_arr">
+        <item>By date</item>
+        <item>By name</item>
+    </string-array>
+    <string-array name="pref_sort_order_val_arr">
+        <item>BY_DATE</item>
+        <item>BY_NAME</item>
+    </string-array>
+    <string-array name="pref_dir_order_arr">
+        <item>On top of the list</item>
+        <item>Among the notes</item>
+        <item>On botton of the list</item>
+    </string-array>
+    <string-array name="pref_dir_order_val_arr">
+        <item>DIR_ON_TOP</item>
+        <item>DIR_AMONG_NOTES</item>
+        <item>DIR_ON_BOTTOM</item>
+    </string-array>
+    <string-array name="pref_colors_arr">
+        <item>Theme defaults</item>
+        <item>White on black</item>
+        <item>Black on white</item>
+    </string-array>
+    <string-array name="pref_colors_val_arr">
+        <item>COLORS_DEFAULT</item>
+        <item>COLORS_W_ON_B</item>
+        <item>COLORS_B_ON_W</item>
+    </string-array>
+    <string-array name="pref_text_size_arr">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="pref_text_size_val_arr">
+        <item>SIZE_SMALL</item>
+        <item>SIZE_MEDIUM</item>
+        <item>SIZE_LARGE</item>
+    </string-array>
+</resources>

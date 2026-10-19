@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warm parchment / papyrus base tone -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="#FAF4EA"
+                android:centerColor="#F8EFE4"
+                android:endColor="#F4EADB"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Subtle marbled texture grain - layer 1 (diagonal organic grain) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:startColor="#0AA08250"
+                android:centerColor="#00000000"
+                android:endColor="#0EB09462"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Subtle marbled texture grain - layer 2 (soft natural variations) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#0AFFFFFF"
+                android:centerColor="#00000000"
+                android:endColor="#0EA88D5D"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

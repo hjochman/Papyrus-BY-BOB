@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_sort_order_arr">
+        <item>Nach Datum</item>
+        <item>Nach Name</item>
+    </string-array>
+    <string-array name="pref_dir_order_arr">
+        <item>Am Anfang der Liste</item>
+        <item>Zwischen den Notizen</item>
+        <item>Am Ende der Liste</item>
+    </string-array>
+    <string-array name="pref_colors_arr">
+        <item>Theme-Standard</item>
+        <item>Weiß auf Schwarz</item>
+        <item>Schwarz auf Weiß</item>
+    </string-array>
+    <string-array name="pref_text_size_arr">
+        <item>Klein</item>
+        <item>Mittel</item>
+        <item>Groß</item>
+    </string-array>
+</resources>

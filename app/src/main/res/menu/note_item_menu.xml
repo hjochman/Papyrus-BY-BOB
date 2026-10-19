@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_rename"
+        android:title="@string/menu_rename" />
+    <item
+        android:id="@+id/action_encrypt"
+        android:title="@string/menu_encrypt" />
+    <item
+        android:id="@+id/action_decrypt"
+        android:title="@string/menu_decrypt" />
+    <item
+        android:id="@+id/action_copy_to"
+        android:title="@string/menu_copy_to" />
+    <item
+        android:id="@+id/action_move_to"
+        android:title="@string/menu_move_to" />
+    <item
+        android:id="@+id/action_send"
+        android:title="@string/menu_send" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/menu_delete" />
+</menu>
