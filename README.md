@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Papyrus BY BOB.png" alt="Papyrus BY BOB" width="400">
+</p>
+
 # Papyrus by IBM Bob
 
 **Papyrus by Bob** (`com.hape.payrus`) ist eine moderne, leichtgewichtige und sichere Notiz-App für Android, inspiriert von „Papyrus Ex“ von Kallisto. Sie ist komplett neu in modernem **Java (Android SDK 34 / AndroidX / Material Components)** geschrieben.
